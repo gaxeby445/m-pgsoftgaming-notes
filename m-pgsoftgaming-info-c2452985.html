@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pg电子 游戏指南 – 快速识别与体验</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f9fafb;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        /* hero */
+        .hero {
+            text-align: left;
+            margin-bottom: 56px;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            color: #475569;
+            max-width: 620px;
+        }
+
+        .hero .badge {
+            display: inline-block;
+            background: #e9edf5;
+            color: #1e3a5f;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 4px 14px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            letter-spacing: 0.02em;
+        }
+
+        /* 通用 section */
+        section {
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #1e293b;
+            margin: 24px 0 10px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #334155;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            list-style-type: disc;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px solid #b7cff8;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #2563eb;
+            background: #eef4ff;
+        }
+
+        /* 优势卡片 */
+        .advantage-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .advantage-item {
+            background: white;
+            border-radius: 16px;
+            padding: 24px 20px;
+            flex: 1 1 200px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 2px 8px rgba(0,0,0,0.02);
+            border: 1px solid #edf2f7;
+        }
+
+        .advantage-item .num {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #2563eb;
+            margin-bottom: 6px;
+        }
+
+        .advantage-item h4 {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #0f172a;
+        }
+
+        .advantage-item p {
+            font-size: 0.92rem;
+            color: #475569;
+            margin-bottom: 0;
+        }
+
+        /* FAQ 摘要 */
+        .faq-compact {
+            background: white;
+            border-radius: 20px;
+            padding: 28px 24px;
+            border: 1px solid #eaf0f6;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #0f172a;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .faq-answer {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        /* 底部链接区 */
+        .footer-links {
+            margin-top: 56px;
+            padding-top: 28px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 32px;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a {
+            border-bottom: none;
+            color: #334155;
+            font-weight: 450;
+        }
+
+        .footer-links a:hover {
+            color: #2563eb;
+            background: transparent;
+            border-bottom: 1px solid #2563eb;
+        }
+
+        .footnote {
+            margin-top: 24px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+            text-align: center;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .page {
+                padding: 32px 16px 64px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .advantage-grid {
+                flex-direction: column;
+            }
+
+            .faq-compact {
+                padding: 20px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- hero 区 -->
+        <header class="hero">
+            <span class="badge">游戏 · 快速了解</span>
+            <h1>pg电子 是什么？<br>一分钟弄清站点用途</h1>
+            <p>打开 m--pgsoftgaming.com，你会发现它集中呈现了<strong> pg电子 </strong>相关的内容资源。无论你是第一次接触还是想确认信息，这里都能帮你快速定位。</p>
+        </header>
+
+        <!-- 优势区：为什么值得看 -->
+        <section>
+            <h2>为什么先看这里</h2>
+            <div class="advantage-grid">
+                <div class="advantage-item">
+                    <span class="num">①</span>
+                    <h4>信息直接</h4>
+                    <p>页面围绕 pg 系列产品展开，入口清晰，不用翻找就能找到关键说明。</p>
+                </div>
+                <div class="advantage-item">
+                    <span class="num">②</span>
+                    <h4>聚焦电子主题</h4>
+                    <p>整个站点的内容都围绕着电子类游戏机制和体验，主题专一，适合精准了解。</p>
+                </div>
+                <div class="advantage-item">
+                    <span class="num">③</span>
+                    <h4>结构轻量</h4>
+                    <p>没有复杂分支，打开即看，减少不必要的跳转，适合快速浏览和比对。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 说明区：站点到底在展示什么 -->
+        <section>
+            <h2>站点说明</h2>
+            <p><a href="https://m--pgsoftgaming.com">pg电子</a> 这个站点，你可以把它理解成一个集中说明页。它并不试图包罗万象，而是把跟 <strong>pg 电子</strong> 有关的基本信息、类型介绍和常见问题点整理在一起。</p>
+            <p>很多用户第一次看到域名时会产生疑问：“这个页面是做什么的？是不是官方？” 实际上，它更接近一个聚合式的参考页，帮你省去四处搜索碎片信息的时间。如果你正在寻找与电子类游戏相关的入门介绍或功能说明，这里的内容可以作为第一站。</p>
+            <h3>你能在页面里找到什么</h3>
+            <ul>
+                <li>对 pg 电子品类的基本描述和分类</li>
+                <li>常见玩法与机制概览（适合新手了解全貌）</li>
+                <li>一些使用场景的提示，比如在什么情况下适合参考该站</li>
+                <li>简洁的问答整理，针对初次访问者最可能问的问题</li>
+            </ul>
+            <p>整体来看，它不提供下载、不收集用户数据，纯粹是一个信息展示型页面，风格以实用为主。</p>
+        </section>
+
+        <!-- FAQ 摘要（不是完整faq，是摘要） -->
+        <section>
+            <h2>FAQ 摘要</h2>
+            <div class="faq-compact">
+                <div class="faq-item">
+                    <span class="faq-question">这个网站是 pg 的官方网站吗？</span>
+                    <div class="faq-answer">不是。它是一个第三方整理的介绍页，专门汇总与 <strong>pg电子</strong> 有关的内容，方便用户快速了解。</div>
+                </div>
+                <div class="faq-item">
+                    <span class="faq-question">我可以在站内玩游戏吗？</span>
+                    <div class="faq-answer">不可以。该页面只提供文字与图文说明，不包含实际游戏入口或模拟器。</div>
+                </div>
+                <div class="faq-item">
+                    <span class="faq-question">信息会更新吗？</span>
+                    <div class="faq-answer">视维护情况而定，建议作为入门参考，具体最新细节可再通过其他渠道确认。</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 底部链接区 + 自然嵌入的a标签 -->
+        <footer class="footer-links">
+            <a href="https://m--pgsoftgaming.com">pg电子</a>
+            <a href="#">关于本站</a>
+            <a href="#">常见问题</a>
+            <a href="#">内容说明</a>
+        </footer>
+
+        <div class="footnote">
+            本页仅为信息整理，不隶属于任何游戏公司或品牌。
+        </div>
+    </div>
+</body>
+</html>
